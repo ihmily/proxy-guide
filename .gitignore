@@ -1,0 +1,21 @@
+site/
+
+# Python
+*.pyc
+__pycache__/
+.venv/
+venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+.cache/

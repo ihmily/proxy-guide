@@ -1,0 +1,160 @@
+site_name: 科学上网完全指南
+site_description: 专业的科学上网技术文档 - 涵盖代理协议、客户端工具、服务器搭建、安全防护等完整知识体系
+site_author: 科学上网指南
+repo_url: https://github.com/ihmily/proxy-guide
+repo_name: GitHub
+edit_uri: edit/main/
+
+copyright: Copyright &copy; 2025 科学上网完全指南
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+  
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.footer
+
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - zh
+        - en
+  - tags
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: 本章大纲
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ihmily/proxy-guide
+  
+  analytics:
+    feedback:
+      title: 这个页面有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: 有帮助
+          data: 1
+          note: 感谢您的反馈！
+        - icon: material/thumb-down-outline
+          name: 需要改进
+          data: 0
+          note: 感谢您的反馈！我们会持续改进。
+
+docs_dir: docs
+
+nav:
+  - 首页: 00-全书大纲.md
+  
+  - 第一部分 基础知识篇:
+    - 第01章 什么是科学上网: 第一部分-基础知识篇/第01章-什么是科学上网.md
+    - 第02章 网络基础知识: 第一部分-基础知识篇/第02章-网络基础知识.md
+    - 第03章 核心技术原理: 第一部分-基础知识篇/第03章-核心技术原理.md
+  
+  - 第二部分 主流协议与工具篇:
+    - 第04章 常见代理协议详解: 第二部分-主流协议与工具篇/第04章-常见代理协议详解.md
+    - 第05章 客户端工具使用指南: 第二部分-主流协议与工具篇/第05章-客户端工具使用指南.md
+    - 第06章 浏览器与插件方案: 第二部分-主流协议与工具篇/第06章-浏览器与插件方案.md
+  
+  - 第三部分 高级配置篇:
+    - 第07章 订阅与节点管理: 第三部分-高级配置篇/第07章-订阅与节点管理.md
+    - 第08章 分流规则详解: 第三部分-高级配置篇/第08章-分流规则详解.md
+    - 第09章 进阶优化技巧: 第三部分-高级配置篇/第09章-进阶优化技巧.md
+  
+  - 第四部分 服务器搭建篇:
+    - 第10章 VPS选购指南: 第四部分-服务器搭建篇/第10章-VPS选购指南.md
+    - 第11章 服务器环境配置: 第四部分-服务器搭建篇/第11章-服务器环境配置.md
+    - 第12章 一键脚本部署: 第四部分-服务器搭建篇/第12章-一键脚本部署.md
+    - 第13章 手动搭建教程: 第四部分-服务器搭建篇/第13章-手动搭建教程.md
+    - 第14章 多用户管理方案: 第四部分-服务器搭建篇/第14章-多用户管理方案.md
+  
+  - 第五部分 安全与隐私篇:
+    - 第15章 网络安全防护: 第五部分-安全与隐私篇/第15章-网络安全防护.md
+    - 第16章 隐私保护实践: 第五部分-安全与隐私篇/第16章-隐私保护实践.md
+    - 第17章 审计与日志管理: 第五部分-安全与隐私篇/第17章-审计与日志管理.md
+  
+  - 第六部分 故障排查篇:
+    - 第18章 常见问题诊断: 第六部分-故障排查篇/第18章-常见问题诊断.md
+    - 第19章 网络测试工具: 第六部分-故障排查篇/第19章-网络测试工具.md
+  
+  - 第七部分 最佳实践篇:
+    - 第20章 不同场景应用: 第七部分-最佳实践篇/第20章-不同场景应用.md
+    - 第21章 成本优化策略: 第七部分-最佳实践篇/第21章-成本优化策略.md
+    - 第22章 合规使用建议: 第七部分-最佳实践篇/第22章-合规使用建议.md
+  
+  - 附录:
+    - 附录A 术语表: 附录/附录A-术语表.md
+    - 附录B 配置模板: 附录/附录B-配置模板.md
+    - 附录C 资源推荐: 附录/附录C-资源推荐.md
+    - 附录D 参考文献: 附录/附录D-参考文献.md
