@@ -1,5 +1,5 @@
 site_name: 科学上网完全指南
-site_url: https://ihmily.github.io/proxy-guide/
+site_url: https://ihmily.github.io/proxy-guide
 site_description: 专业的科学上网技术文档 - 涵盖代理协议、客户端工具、服务器搭建、安全防护等完整知识体系
 site_author: 科学上网指南
 repo_url: https://github.com/ihmily/proxy-guide
@@ -116,8 +116,8 @@ extra:
 docs_dir: docs
 
 nav:
-  - 首页: 00-全书大纲.md
-  
+  - 首页: index.md
+  - 全书大纲: 00-全书大纲.md
   - 第一部分 基础知识篇:
     - 第01章 什么是科学上网: 第一部分-基础知识篇/第01章-什么是科学上网.md
     - 第02章 网络基础知识: 第一部分-基础知识篇/第02章-网络基础知识.md
